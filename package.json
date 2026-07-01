@@ -1,0 +1,16 @@
+{
+  "name": "mohammed-nishad-portfolio-root",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix frontend run dev\" \"npm --prefix admin run dev\" \"npm --prefix backend run dev\"",
+    "build": "npm --prefix frontend run build && npm --prefix admin run build",
+    "preview": "npm --prefix frontend run preview",
+    "install-all": "npm install && npm --prefix frontend install && npm --prefix admin install && npm --prefix backend install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.14"
+  }
+}

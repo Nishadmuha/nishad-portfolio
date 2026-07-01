@@ -1,0 +1,158 @@
+{
+  "admin": {
+    "username": "admin",
+    "passwordHash": "$2a$10$kaR34IjqPS3U4uaE6qaIo.Zmr4Dvvt/.B/bRm92jUiKRBQWIgd5T."
+  },
+  "settings": {
+    "name": "MOHAMMED NISHAD",
+    "title": "Full Stack Developer Portfolio",
+    "bio": "Full Stack Developer specializing in building scalable, high-performance web applications with a focus on clean code and seamless user experience.",
+    "email": "mohammednishadk2003@gmail.com",
+    "resumeUrl": "uploads/resume.pdf",
+    "socials": {
+      "twitter": "https://x.com",
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com"
+    },
+    "bannerImage": "assets/portrait_hoodie_bw.png",
+    "aboutImage": "assets/portrait_colored.png",
+    "philosophyQuote": "Simplicity is the ultimate sophistication. In software design, complexity is easy to write but hard to maintain; true mastery lies in building solutions that feel light and clean.",
+    "services": [
+      {
+        "title": "Web Design",
+        "description": "Crafting beautiful, high-fidelity visual solutions that are tailored to your business objectives. I design custom user journeys with modern typography scales, high contrast interfaces, and smooth, micro-animated user components.",
+        "tags": ["UI/UX Design", "Wireframing", "Interactive Prototypes", "Typography Scales", "Design Systems", "Figma Layouts"],
+        "image": "assets/service_design.png"
+      },
+      {
+        "title": "Development",
+        "description": "Engineering robust, fast-loading, and completely secure web architectures. Whether building with PHP/Laravel or modern Javascript (Node.js, React, Vanilla JS), I deliver code structures optimized for responsiveness and high traffic.",
+        "tags": ["HTML5 & Semantic SEO", "CSS3 Architecture", "Vanilla Javascript & ES6", "PHP & Laravel", "Node.js Backends", "Database Schema Modeling"],
+        "image": "assets/service_development.png"
+      },
+      {
+        "title": "Brand Identity",
+        "description": "Formulating brand assets and visual rules to communicate your company's core values. From minimalist logo designs to guidelines on vector assets, corporate stationery, and color matching, I establish premium visual standards.",
+        "tags": ["Logo Design", "Vector Art", "Brand Style Books", "Corporate Identity", "Minimalist Business Cards", "Visual Guideline Systems"],
+        "image": "assets/service_branding.png"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What services do you offer?",
+        "a": "I offer high-end Web Design, Full Stack Development, and cohesive Brand Identity solutions. Whether it's wireframing a user interface, writing robust PHP/Laravel or Node.js backend logic, or building interactive React frontends, I provide end-to-end web engineering."
+      },
+      {
+        "q": "How do you approach a new project?",
+        "a": "My workflow is divided into four main stages: Discovery (understanding objectives and technical stack scoping), Design (wireframes and mockup cycles), Development (clean, semantic engineering and backend implementation), and Testing/Deployment (optimization, cross-device QA, and secure hosting launches)."
+      },
+      {
+        "q": "What is your project timeline?",
+        "a": "Timelines depend on the scale of the application. Typically, a custom landing page or single-page portal spans 2–3 weeks. More complex full-stack web platforms with databases and user panels generally require 4–8 weeks from planning to production."
+      }
+    ],
+    "whyChooseMe": [
+      {
+        "title": "Full Stack Expertise",
+        "description": "I bridge the gap between elegant frontend interfaces and robust backend logic. From database design to responsive frontend rendering, I build cohesive digital systems that scale."
+      },
+      {
+        "title": "Quality-Focused Development",
+        "description": "I write semantic, performant, and maintainable code. Every application is optimized for speed, search engines, and maximum compatibility, ensuring long-term technical durability."
+      },
+      {
+        "title": "Reliability & Timely Delivery",
+        "description": "Communication and milestones form the foundation of my project workflow. I work transparently to deliver premium software within agreed schedules without compromising on design integrity."
+      }
+    ],
+    "experience": [
+      {
+        "role": "Jr. Web Developer (Intern)",
+        "company": "Zeneom Creative Lab Pvt.Ltd",
+        "duration": "03th March 2025 - 31th March 2025",
+        "description": "Contributed to frontend interface refinement, assisted in API integrations, and learned standard coding workflow protocols."
+      }
+    ],
+    "achievements": [
+      {
+        "title": "NIT Calicut",
+        "subtitle": "B.Tech Computer Science",
+        "year": "2021 - 2025",
+        "description": "Specialized in data structures, algorithms, and database management systems."
+      },
+      {
+        "title": "IIT Madras",
+        "subtitle": "Diploma in Data Science",
+        "year": "2023 - 2024",
+        "description": "Completed online specialization in data analytics, machine learning, and business intelligence."
+      },
+      {
+        "title": "CSS Design Award",
+        "subtitle": "Best UI/UX Design Portfolio",
+        "year": "2024",
+        "description": "Awarded for exceptional visual aesthetics and layout styling execution."
+      },
+      {
+        "title": "Awwwards Nomination",
+        "subtitle": "Site of the Day Nominee",
+        "year": "2025",
+        "description": "Nominated for premium interactive micro-animations and design aesthetics."
+      }
+    ],
+    "hobbies": [
+      {
+        "image": "assets/travel_mountain.png",
+        "caption": "Mountain trekking in the Western Ghats"
+      },
+      {
+        "image": "assets/travel_coast.png",
+        "caption": "Coastal photography along the Arabian Sea"
+      },
+      {
+        "image": "assets/travel_urban.png",
+        "caption": "Exploring heritage architecture in historic towns"
+      },
+      {
+        "image": "assets/travel_nature.png",
+        "caption": "Nature walk and landscape composition study"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "1",
+      "name": "Celesia web design front-end",
+      "year": "2023",
+      "category": "design",
+      "image": "assets/project_celesia.png"
+    },
+    {
+      "id": "2",
+      "name": "Apex Analytical Dashboard",
+      "year": "2024",
+      "category": "development",
+      "image": "assets/project_dashboard.png"
+    },
+    {
+      "id": "3",
+      "name": "Aura Studio Brand Identity",
+      "year": "2024",
+      "category": "design",
+      "image": "assets/service_branding.png"
+    },
+    {
+      "id": "4",
+      "name": "Vortex Real-time Engine",
+      "year": "2025",
+      "category": "development",
+      "image": "assets/service_development.png"
+    },
+    {
+      "id": "1782679682691",
+      "name": "Solaris App",
+      "year": "2026",
+      "category": "development",
+      "image": ""
+    }
+  ]
+}
