@@ -1,4 +1,8 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import { v2 as cloudinary } from 'cloudinary';
+
 
 // Check if Cloudinary environment variables are present
 const isCloudinaryConfigured = !!(
