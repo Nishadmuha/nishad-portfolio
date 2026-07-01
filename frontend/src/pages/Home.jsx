@@ -38,12 +38,13 @@ function Home() {
             <p className="hero-desc">
               {settings.bio || "Full Stack Developer specializing in building scalable, high-performance web applications with a focus on clean code and seamless user experience."}
             </p>
-            <Link to="/contact" className="btn-pill-outline">Schedule a consultation</Link>
+            <Link to="/contact" className="btn-pill-outline hide-mobile">Contact</Link>
           </div>
           <div className="hero-right">
             <div className="hero-img-wrap">
               <img src={settings.bannerImage || "assets/portrait_hoodie_bw.png"} alt="Mohammed Nishad - Cutout portrait in a hoodie" />
             </div>
+            <Link to="/contact" className="btn-pill-outline show-mobile-only">Contact</Link>
           </div>
         </ScrollReveal>
       </section>
@@ -110,7 +111,7 @@ function Home() {
           <div className="process-layout">
             <div className="process-left">
               <h2 className="section-title">My Creative Workflow</h2>
-              <Link to="/contact" className="btn-pill-outline">Schedule a consultation</Link>
+              <Link to="/contact" className="btn-pill-outline">Contact</Link>
             </div>
             <div className="process-right">
               <div className="process-list">
@@ -150,7 +151,7 @@ function Home() {
         </ScrollReveal>
         
         <div className="services-cards" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
-          <ScrollReveal delay={1} className="service-card" style={{ background: 'rgba(255,255,255,0.02)', padding: '2.5rem', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
+          <ScrollReveal delay={1} className="service-card" style={{ background: 'rgba(255,255,255,0.02)', padding: '2rem 1.5rem', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
             <h3 style={{ fontFamily: 'Syne', fontWeight: 800, fontSize: '1.5rem', color: '#fff', marginBottom: '1rem' }}>Web Design</h3>
             <p style={{ color: '#a0a0a5', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '1.5rem' }}>
               Curating aesthetics, building interactive wireframes, custom layouts, and clean typographic grids in Figma.
@@ -158,7 +159,7 @@ function Home() {
             <Link to="/services" style={{ color: '#ccff00', fontWeight: 'bold', textDecoration: 'none', fontSize: '0.9rem' }}>Read details &rarr;</Link>
           </ScrollReveal>
 
-          <ScrollReveal delay={2} className="service-card" style={{ background: 'rgba(255,255,255,0.02)', padding: '2.5rem', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
+          <ScrollReveal delay={2} className="service-card" style={{ background: 'rgba(255,255,255,0.02)', padding: '2rem 1.5rem', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
             <h3 style={{ fontFamily: 'Syne', fontWeight: 800, fontSize: '1.5rem', color: '#fff', marginBottom: '1rem' }}>Development</h3>
             <p style={{ color: '#a0a0a5', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '1.5rem' }}>
               Building performant client scripts, robust databases, clean backend logic, and scalable APIs in Node/React.
@@ -166,7 +167,7 @@ function Home() {
             <Link to="/services" style={{ color: '#ccff00', fontWeight: 'bold', textDecoration: 'none', fontSize: '0.9rem' }}>Read details &rarr;</Link>
           </ScrollReveal>
 
-          <ScrollReveal delay={3} className="service-card" style={{ background: 'rgba(255,255,255,0.02)', padding: '2.5rem', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
+          <ScrollReveal delay={3} className="service-card" style={{ background: 'rgba(255,255,255,0.02)', padding: '2rem 1.5rem', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
             <h3 style={{ fontFamily: 'Syne', fontWeight: 800, fontSize: '1.5rem', color: '#fff', marginBottom: '1rem' }}>Brand Identity</h3>
             <p style={{ color: '#a0a0a5', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '1.5rem' }}>
               Establishing corporate guidelines, brand assets, logos, and custom color profiles to tell your product's story.

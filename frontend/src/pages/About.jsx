@@ -97,7 +97,7 @@ function About() {
                   <p className="exp-meta">{exp.company}</p>
                   <span className="exp-duration">{exp.duration}</span>
                   {exp.description && (
-                    <p className="exp-desc" style={{ color: '#a0a0a5', fontSize: '0.9rem', marginTop: '0.5rem', lineHeight: '1.6' }}>
+                    <p className="exp-desc" style={{ color: 'var(--text-gray-dark)', fontSize: '0.9rem', marginTop: '0.5rem', lineHeight: '1.6' }}>
                       {exp.description}
                     </p>
                   )}
@@ -105,7 +105,7 @@ function About() {
               ))}
               {experience.length === 0 && (
                 <ScrollReveal className="exp-card">
-                  <p style={{ color: '#a0a0a5' }}>No experience listed.</p>
+                  <p style={{ color: 'var(--text-gray-dark)' }}>No experience listed.</p>
                 </ScrollReveal>
               )}
             </div>
@@ -175,7 +175,7 @@ function About() {
                 <h4>{ach.title}</h4>
                 <span className="badge">{ach.subtitle}</span>
                 {ach.description && (
-                  <p style={{ color: '#a0a0a5', fontSize: '0.8rem', marginTop: '0.5rem', lineHeight: '1.5' }}>{ach.description}</p>
+                  <p style={{ color: 'var(--text-gray-dark)', fontSize: '0.8rem', marginTop: '0.5rem', lineHeight: '1.5' }}>{ach.description}</p>
                 )}
               </ScrollReveal>
             ))}
