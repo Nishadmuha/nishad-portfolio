@@ -28,8 +28,8 @@ api.interceptors.response.use(
     if (error.response && (error.response.status === 401 || error.response.status === 403)) {
       localStorage.removeItem('admin_token');
       localStorage.removeItem('admin_user');
-      // Relative path redirect for clean single page login
-      window.location.href = '/login';
+      // Redirect to /admin/login inside frontend project
+      window.location.href = '/admin/login';
     }
     return Promise.reject(error);
   }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import api from '../api/api.js';
+import api from './api.js';
+import './admin.css';
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -12,7 +13,7 @@ function Login() {
   useEffect(() => {
     const token = localStorage.getItem('admin_token');
     if (token) {
-      navigate('/', { replace: true });
+      navigate('/admin', { replace: true });
     }
   }, [navigate]);
 
@@ -25,7 +26,7 @@ function Login() {
       const res = await api.post('/auth/login', { username, password });
       localStorage.setItem('admin_token', res.data.token);
       localStorage.setItem('admin_user', res.data.username);
-      navigate('/', { replace: true });
+      navigate('/admin', { replace: true });
     } catch (err) {
       console.error(err);
       setError(err.response?.data?.message || 'Invalid username or password.');
@@ -110,7 +111,7 @@ function Login() {
           </button>
         </form>
 
-        <a href="http://localhost:5173/" className="login-back-link">
+        <a href="/" className="login-back-link">
           <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
             <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
           </svg>

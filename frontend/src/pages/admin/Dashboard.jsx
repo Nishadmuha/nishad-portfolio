@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import api from '../api/api.js';
+import api from './api.js';
+import './admin.css';
 
 function Dashboard() {
   const [activeTab, setActiveTab] = useState('overview');
@@ -96,7 +97,7 @@ function Dashboard() {
   const handleLogout = () => {
     localStorage.removeItem('admin_token');
     localStorage.removeItem('admin_user');
-    navigate('/login');
+    navigate('/admin/login');
   };
 
   // --- Project CRUD Operations ---
@@ -454,7 +455,7 @@ function Dashboard() {
           <section className="tab-panel active">
             <div className="page-header">
               <h1>Dashboard<span>Overview</span></h1>
-              <a href="http://localhost:5173/" target="_blank" rel="noopener noreferrer" className="btn-action btn-secondary" style={{ textDecoration: 'none' }}>
+              <a href="/" className="btn-action btn-secondary" style={{ textDecoration: 'none' }}>
                 <span>View Website</span>
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                   <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59L8.12 14.47l1.41 1.41L19 6.41V10h2V3h-7z"/>
@@ -1244,7 +1245,7 @@ function Dashboard() {
             </div>
           </section>
         )}
- 
+
       </main>
     </div>
   );

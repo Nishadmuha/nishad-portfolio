@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Login from './pages/Login.jsx';
-import Dashboard from './pages/Dashboard.jsx';
-import api from './api/api.js';
+import { Navigate } from 'react-router-dom';
+import api from './api.js';
 
-function ProtectedRoute({ children }) {
+export default function ProtectedRoute({ children }) {
   const [isVerifying, setIsVerifying] = useState(true);
   const [isValid, setIsValid] = useState(false);
   const token = localStorage.getItem('admin_token');
@@ -38,7 +36,7 @@ function ProtectedRoute({ children }) {
   }, [token]);
 
   if (!token) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/admin/login" replace />;
   }
 
   if (isVerifying) {
@@ -62,28 +60,8 @@ function ProtectedRoute({ children }) {
   }
 
   if (!isValid) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/admin/login" replace />;
   }
 
   return children;
 }
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route 
-          path="/*" 
-          element={
-            <ProtectedRoute>
-              <Dashboard />
-            </ProtectedRoute>
-          } 
-        />
-      </Routes>
-    </Router>
-  );
-}
-
-export default App;

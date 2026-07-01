@@ -26,3 +26,6 @@ mongodb_data/
 # OS
 .DS_Store
 Thumbs.db
+
+# Uploads
+backend/public/uploads/*
